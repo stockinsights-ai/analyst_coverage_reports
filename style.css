@@ -10,6 +10,22 @@ body {
     padding: 40px 60px; /* Added padding */
 }
 
+header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+header img {
+    height: 60px;
+    margin-right: 20px;
+}
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
 h1 {
     font-size: 28px;
     font-weight: 700;
