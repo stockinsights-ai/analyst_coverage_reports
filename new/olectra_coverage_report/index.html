@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olectra Greentech Ltd. - Initiation Coverage Report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>Olectra Greentech Ltd.</h1>
+        <h2>Initiation Coverage Report</h2>
+        <p>
+          Welcome to the comprehensive coverage report on Olectra Greentech Ltd.
+          Please select a section below to navigate through the report.
+        </p>
+        <ol>
+          <li class="sidebar-link">
+            <a href="executive-summary.html" target="content-frame"
+              >Executive Summary</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="company-overview.html" target="content-frame"
+              >Company Overview</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="business-segment-analysis.html" target="content-frame"
+              >Business Segments Analysis</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="financial-analysis.html" target="content-frame"
+              >Detailed Financial Analysis</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="management-discussion-analysis.html" target="content-frame"
+              >Management Discussion and Analysis (MD&amp;A)</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="recent-news-developments.html" target="content-frame"
+              >Recent News and Developments</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="market-industry-overview.html" target="content-frame"
+              >Market and Industry Overview</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="investment-risks.html" target="content-frame"
+              >Investment Risks</a
+            >
+          </li>
+          <li class="sidebar-link">
+            <a href="valuation-and-recommendation.html" target="content-frame"
+              >Valuation and Recommendation</a
+            >
+          </li>
+        </ol>
+      </div>
+      <div class="iframe-container">
+        <iframe name="content-frame" src="executive-summary.html"></iframe>
+      </div>
+    </div>
+
+    <script>
+      // Get all links inside the content area
+      const links = document.querySelectorAll(".content a");
+
+      // Add click event listener to each link
+      links.forEach((link) => {
+        link.addEventListener("click", function () {
+          // Remove active class from all links
+          links.forEach((l) => l.classList.remove("active-link"));
+
+          // Add active class to the clicked link
+          this.classList.add("active-link");
+        });
+      });
+    </script>
+  </body>
+</html>
