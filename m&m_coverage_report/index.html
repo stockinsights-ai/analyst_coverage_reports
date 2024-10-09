@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahindra & Mahindra Ltd. - Coverage Initiation Report</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+    <h1>Mahindra & Mahindra Ltd.</h1>
+    <h2>Coverage Initiation Report</h2>
+    <p>This is a comprehensive coverage report on Mahindra & Mahindra Ltd. Please select a section below to navigate through the report.</p>
+    <ol>
+        <li class="sidebar-link"><a target="content-frame" href="company-overview.html">Company Overview</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="business-segments-overview.html">Business Segments Overview</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="financial-analysis.html">Financial Analysis</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="management-discussion-analysis.html">Management Discussion and Analysis (MD&amp;A)</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="recent-news-developments.html">Recent News and Developments</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="market-industry-overview.html">Market Industry Overview</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="financial-projections-next-quarter.html">Financial Projections for Next Quarter - FY 25 Q2</a></li>
+        <li class="sidebar-link"><a target="content-frame" href="fy25q1-result-update.html">Latest Quarter Result Update - FY25 Q1</a></li>
+    </ol>
+</div>
+<div class="iframe-container">
+  <iframe name="content-frame" src="company-overview.html"></iframe>
+</div>
+</div>
+
+<script>
+// Get all links inside the content area
+const links = document.querySelectorAll(".content a");
+
+// Add click event listener to each link
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    // Remove active class from all links
+    links.forEach((l) => l.classList.remove("active-link"));
+
+    // Add active class to the clicked link
+    this.classList.add("active-link");
+  });
+});
+</script>
+</body>
+</html>
